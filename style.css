@@ -40,7 +40,12 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 
-.brand img { width: 160px; height: auto; }
+.brand img {
+  width: 140px;
+  height: 50px;
+  object-fit: contain;
+  object-position: left center;
+}
 
 nav {
   display: flex;
@@ -66,9 +71,15 @@ nav a { text-decoration: none; }
 }
 
 .hero-image {
-  background-image: linear-gradient(90deg, rgba(19, 43, 85, 0.1), rgba(19, 43, 85, 0)), url("hero.jpg");
+  background-image: linear-gradient(
+      90deg,
+      rgba(19, 43, 85, 0.12),
+      rgba(19, 43, 85, 0)
+    ),
+    url("hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-repeat: no-repeat;
   min-height: 620px;
 }
 
